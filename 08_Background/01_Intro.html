@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            padding: 50px;
+            margin: 50px;
+            border: 20px dashed rgba(0, 128, 255, 0.461);
+        }
+        .background-color{
+            background-color: chocolate;
+        }
+        .background-image{
+            background-color: chocolate;
+            background-image: url(image.jpg);
+            /* background-position: center center;
+            background-repeat: repeat;
+            background-repeat: repeat-x;
+            background-repeat: repeat-y; */
+        }
+        .background-attachment {
+            background-color:aqua; 
+            background-image: url(image.jpg);
+            background-attachment:fixed ;
+            /* background-attachment:local ; */
+            /* background-attachment:scroll ; */
+        }
+    </style>
+</head>
+<body>
+    <h2>What is background properties?</h2>
+    <p>The background shorthand CSS property sets all background style properties at once, such as color, image, origin and size, or repeat method. </p>
+    <ul>
+        <li>background-color</li> 
+        <li>background-image</li> 
+        <li>background-attachment</li> 
+        <li>background-clip</li> 
+        <li>background-origin</li> 
+        <li>background-position</li> 
+        <li>background-repeat</li> 
+        <li>background-size</li> 
+        <li>background: repeat scroll 0% 0% / auto padding-box border-box none transparent;</li> 
+    </ul>
+
+    <div class="box background-color"><h2>The background-color Property</h2></div>
+    <div class="box background-image"> <h3> background-image</h3></div>
+    <div class="box background-attachment"> <h3> background-attachment</h3></div>
+    <div class="box background-clip"> <h3> background-clip</h3></div>
+    <div class="box background-origin"> <h3> background-origin</h3></div>
+    <div class="box background-position"> <h3> background-position</h3></div>
+    <div class="box background-repeat"> <h3> background-repeat</h3></div>
+    <div class="box background-size"> <h3> background-size</h3></div>
+    <div class="box shorthand"> <h3>shorthand</h3></div>
+    <div class="box linear-gradient"> <h3>linear-gradient</h3></div>
+    <div class="box radial-gradient"> <h3>radial-gradient</h3></div>
+</body>
+</html>
