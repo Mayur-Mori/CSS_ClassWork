@@ -15,19 +15,82 @@
             background-color: chocolate;
         }
         .background-image{
+            color: red;
+            background-size: 10%;
             background-color: chocolate;
             background-image: url(image.jpg);
-            /* background-position: center center;
-            background-repeat: repeat;
-            background-repeat: repeat-x;
-            background-repeat: repeat-y; */
         }
         .background-attachment {
+            color: red;
             background-color:aqua; 
-            background-image: url(image.jpg);
-            background-attachment:fixed ;
+            background-size: 10%;
+            background-image: url(image.jpg);           
             /* background-attachment:local ; */
             /* background-attachment:scroll ; */
+            background-attachment:fixed ;
+        }
+        .background-clip{
+            background-color: aqua;
+            padding: 50px;
+            background-clip: border-box;
+        }
+        .background-clip1{
+            background-color: aqua;
+            padding: 50px;
+            background-clip: content-box;
+        }
+        .background-clip2{
+            background-color: aqua;
+            padding: 50px;
+            background-clip: padding-box;
+        }
+        .background-size{
+            background-color:aqua; 
+            background-image: url(image.jpg);
+            background-size: 20%;
+        }
+        .background-position{
+            background-image: url(image.jpg);
+            background-size: 10%;
+            background-repeat: no-repeat;
+            /* background-position: 50% 50%; */
+            /* background-position: bottom right; */
+            background-position: top left;
+        }
+        .background-origin{
+            background-image: url(image.jpg);
+            background-size: 10%;
+            background-repeat: no-repeat;
+            background-origin: border-box;
+        }
+        .background-origin1{
+            background-image: url(image.jpg);
+            background-size: 10%;
+            background-repeat: no-repeat;
+            background-origin: padding-box;
+        }
+        .background-origin2{
+            background-image: url(image.jpg);
+            background-size: 10%;
+            background-repeat: no-repeat;
+            background-origin: content-box;
+        }
+        .background-repeat{
+            background-image: url(image.jpg);
+            background-size: 20%;
+            /* background-repeat: repeat-x; */
+            background-repeat: repeat-y;
+        }
+        .shorthand{
+            color: red;
+            background: red url(image.jpg) fixed no-repeat center ;
+        }
+        .linear-gradient{
+           background:linear-gradient(120deg, orange,white,green); 
+           /* background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
+        }
+        .radial-gradient{
+           background:radial-gradient(  orange,white,green) 
         }
     </style>
 </head>
@@ -49,8 +112,12 @@
     <div class="box background-color"><h2>The background-color Property</h2></div>
     <div class="box background-image"> <h3> background-image</h3></div>
     <div class="box background-attachment"> <h3> background-attachment</h3></div>
-    <div class="box background-clip"> <h3> background-clip</h3></div>
+    <div class="box background-clip"> <p>The background extends behind the border.</p></div>
+    <div class="box background-clip1"><p>The background extends to the edge of the content box.</p></div>
+    <div class="box background-clip2"><p>The background extends to the inside edge of the border.</p></div>
     <div class="box background-origin"> <h3> background-origin</h3></div>
+    <div class="box background-origin1"> <h3> background-origin</h3></div>
+    <div class="box background-origin2"> <h3> background-origin</h3></div>
     <div class="box background-position"> <h3> background-position</h3></div>
     <div class="box background-repeat"> <h3> background-repeat</h3></div>
     <div class="box background-size"> <h3> background-size</h3></div>
