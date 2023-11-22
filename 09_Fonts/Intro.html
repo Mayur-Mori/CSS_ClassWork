@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .p2 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .p3 {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .p4 {
+            font-family: fantasy;
+        }
+
+        .p5 {
+            font-family: cursive;
+        }
+
+        h3 {
+            font-size: 40px;
+        }
+
+        h4 {
+            font-size: 30px;
+        }
+
+        .size {
+            font-size: 1em;
+        }
+
+        .vw {
+            font-size: 1vw;
+        }
+
+        .font-stretch {
+            font-stretch: expanded;
+        }
+
+        p.normal {
+            font-style: normal;
+        }
+
+        p.italic {
+            font-style: italic;
+        }
+
+        p.oblique {
+            font-style: oblique 10deg;
+        }
+
+        p.normal {
+            font-weight: normal;
+        }
+
+        p.light {
+            font-weight: lighter;
+        }
+
+        p.thick {
+            font-weight: bold;
+        }
+
+        p.thicker {
+            font-weight: 900;
+        }
+
+        p.normal {
+            font-variant: normal;
+        }
+
+        p.small {
+            font-variant: small-caps;
+        }
+
+        div.a {
+            line-height: 10px;
+        }
+
+        div.b {
+            line-height: 30px;
+        }
+
+        div.c {
+            line-height: 0.5cm;
+        }
+
+        div.d {
+            line-height: 1cm;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Fonts in CSS:</h2>
+    <ul>
+        <li>
+            <h3>font-family</h3>
+            <H4>different types of font-family:</H4>
+            <ul type="disc ">
+                <li><strong>Serif</strong> fonts have a small stroke at the edges of each letter. They create a sense of
+                    formality and elegance.</li>
+                <li> fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
+                </li>
+                <li> fonts - here all the letters have the same fixed width. They create a mechanical look. </li>
+                <li><strong>Cursive</strong> fonts imitate human handwriting.</li>
+                <li><strong>Fantasy</strong> fonts are decorative/playful fonts.</li>
+            </ul><br>
+            <strong>Example:</strong><br><br>
+
+            <p class="p1">'Times New Roman', Times, <strong>serif font-family</strong></p>
+            <p class="p2">Arial, Helvetica,<strong>sans-serif font-family</strong></p>
+            <p class="p3">'Courier New', Courier,<strong>monospace font-family</strong></p>
+            <p class="p4">fantasy,<strong>fantasy font-family</strong></p>
+            <p class="p5">Cursive,<strong>cursive font-family</strong></p>
+            <br>
+            <img src="https://linuxhint.com/wp-content/uploads/2022/02/word-image-644.png" width="30%" height="30%"
+                alt="specification">
+        </li><br>
+        <li>
+            <h3>font-size</h3>
+            <p>The font-size property sets the size of the text.</p>
+            <ul>
+                <li>
+                    <p>Absolute Size:</p>
+                    <ul type="disc">
+                        <li>Sets the text to a specified size</li>
+                        <li>Does not allow a user to change the text size in all browsers (bad for accessibility
+                            reasons)</li>
+                        <li>Absolute size is useful when the physical size of the output is known</li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Relative Size:</p>
+                    <ul type="disc">
+                        <li>Sets the size relative to surrounding elements</li>
+                        <li>Allows a user to change the text size in browsers</li>
+                    </ul>
+                </li>
+            </ul><br>
+            <strong>Example:</strong>
+            <h3>This is paragraph</h3>
+            <h4>This is paragraph</h4>
+            <p class="size">Specifying the font-size in percent and em displays the same size in all major browsers, and
+                allows
+                all browsers to resize the text!</p>
+            <p class="vw"><strong>Resize the browser window to see how the text size scales.</strong></p>
+        </li>
+        <li>
+            <h3>font-stretch</h3>
+            <p class="font-stretch">The font-stretch property allows you to make text narrower (condensed) or wider
+                (expanded).
+            </p>
+        </li>
+        <li>
+            <h3>font-style</h3>
+        </li>
+        <p>This property has three values:</p>
+        <ul type="disc">
+            <li>normal - The text is shown normally</li>
+            <li>italic - The text is shown in italics</li>
+            <li>oblique - The text is "leaning" (oblique is very similar to italic, but less supported)
+        </ul><br>
+        <strong>Example:</strong>
+        <p class="normal">This is a paragraph in normal style.</p>
+        <p class="italic">This is a paragraph in italic style.</p>
+        <p class="oblique">This is a paragraph in oblique style.</p>
+        </li>
+        <li>
+            <h3>font-variant</h3>
+            <p class="normal">My name is Hege Refsnes.</p>
+            <p class="small">My name is Hege Refsnes.</p>
+
+        </li>
+        <li>
+            <h3> font-weight</h3>
+            <p class="normal">This is a paragraph.</p>
+            <p class="light">This is a paragraph.</p>
+            <p class="thick">This is a paragraph.</p>
+            <p class="thicker">This is a paragraph.</p>
+
+        </li>
+        <li>
+            <h3> line-height</h3>
+            <div class="a">This is a paragraph with a specified line-height.<br>
+                The line height is here set to 10 pixels.</div>
+
+            <h2>line-height: 30px:</h2>
+            <div class="b">This is a paragraph with a specified line-height.<br>
+                The line height is here set to 30 pixels.</div>
+
+            <h2>line-height: 0.5cm:</h2>
+            <div class="c">This is a paragraph with a specified line-height.<br>
+                The line height is here set to 0.5 centimeter.</div>
+
+            <h2>line-height: 1cm:</h2>
+            <div class="d">This is a paragraph with a specified line-height.<br>
+                The line height is here set to 1 centimeter.</div>
+
+
+        </li>
+    </ul>
+
+</body>
+
+</html>

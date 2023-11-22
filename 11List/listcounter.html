@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol {
+            counter-reset: name;
+            list-style-type: none;
+
+        }
+
+        li::before {
+            counter-increment: name;
+            content: Counters(name, ".")". ";
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Counters</h2>
+    <p>CSS counters are "variables" maintained by CSS whose values can be incremented by CSS rules </p>
+    <ul>
+        <li>counter-reset - Creates or resets a counter</li>
+        <li>counter-increment - Increments a counter value</li>
+        <li>content - Inserts generated content</li>
+        <li>counter() or counters() function - Adds the value of a counter to an element</li>
+    </ul>
+    <p>For Example:</p>
+    <ol>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+    </ol>
+
+    <ol>
+        <li>item</li>
+        <li>item
+            <ol>
+                <li>item</li>
+                <li>item</li>
+                <li>item
+                    <ol>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                    </ol>
+                </li>
+                <li>item</li>
+            </ol>
+        </li>
+        <li>item</li>
+        <li>item</li>
+    </ol>
+
+    <ol>
+        <li>item</li>
+        <li>item</li>
+    </ol>
+</body>
+
+</html>
