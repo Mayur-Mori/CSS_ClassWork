@@ -44,10 +44,79 @@
         p.c {
             text-align-last: justify;
         }
+
         p.ex1 {
-  direction: rtl;
-  unicode-bidi: bidi-override;
-}
+            direction: rtl;
+            /* unicode-bidi: bidi-override; */
+        }
+
+        p.ex2 {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        .d {
+            text-decoration: line-through;
+        }
+
+        .e {
+            text-decoration: overline;
+        }
+
+        .f {
+            text-decoration: underline;
+        }
+
+        .g {
+            text-decoration: overline underline;
+        }
+
+        .h {
+            text-decoration: line-through;
+            text-decoration-color: aqua;
+        }
+
+        .i {
+            text-decoration: overline;
+            text-decoration-color: brown;
+        }
+
+        .j {
+            text-decoration: underline;
+            text-decoration-color: blueviolet;
+        }
+
+        .k {
+            text-decoration: underline;
+            text-decoration-color: blueviolet;
+            text-decoration-thickness: 5px;
+        }
+
+        .l {
+            text-decoration: underline violet dashed 3px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        .uppercase{
+            text-transform: uppercase;
+        }
+        .lowercase{
+            text-transform: lowercase;
+        }
+        .capitalize{
+            text-transform: capitalize;
+        }
+        .indent{
+            text-indent: 50px;
+        }
+        .letter-spacing{
+            letter-spacing: 5px;
+        }
+        .word-spacing{
+            word-spacing: 10px;
+        }
     </style>
 </head>
 
@@ -59,7 +128,7 @@
         </li>
         <li><strong> Text Alignment</strong>
             <ul>
-                <li>text-align
+                <li><strong>text-align</strong>
                     <p>The text-align property is used to set the horizontal alignment of a text.A text can be left or
                         right aligned, centered, or justified.</p>
                     <h5 class="heading1">heading5</h5>
@@ -76,31 +145,82 @@
                         pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero
                         rhoncus ut.</p>
 
-                <strong>text-align-last: center:</strong>
+                    <strong>text-align-last: center:</strong>
                     <p class="b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat
                         pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero
                         rhoncus ut.</p>
 
-                <strong>text-align-last: justify:</strong>
+                    <strong>text-align-last: justify:</strong>
                     <p class="c">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat
                         pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero
                         rhoncus ut.</p>
 
                 </li>
                 <li><strong>direction</strong>
-                <p>The direction and unicode-bidi properties can be used to change the text direction of an element:</p>
-                <p class="ex1">This is right-to-left text direction.</p>
+                    <p>The direction and unicode-bidi properties can be used to change the text direction of an element:
+                    </p>
+                    <p class="ex1">This is right-to-left text direction.</p>
                 </li>
-                <li>unicode-bidi</li>
-                <li>vertical-align</li>
+                <li><strong>unicode-bidi</strong>
+                    <p>Same property like direction but in this letter start from right instead of word .</p>
+                    <p class="ex2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed vel cum libero quisquam
+                        temporibus reiciendis dolorem possimus tempore debitis ipsam. Architecto fugit nesciunt, quos
+                        similique quam dolores velit? Eius, quaerat!</p>
+                </li>
             </ul>
         </li><br>
-        <li> <strong>Text Decoration</strong></li>
-        <li> Removing the Default Underline from Links</li>
-        <li> Text Transformation</li>
-        <li> Text Indentation</li>
-        <li> Letter Spacing</li>
-        <li> Word Spacing</li>
+        <li> <strong>Text Decoration</strong>
+            <ul>
+                <li><strong>text-decoration-line</strong>
+                    <p class="d">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eveniet modi id nisi
+                        obcaecati vitae quis sapiente unde recusandae, dolores illo tempora sint iste eum hic, officia
+                        esse quasi quod?</p>
+                    <p class="e">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eveniet modi id nisi
+                        obcaecati vitae quis sapiente unde recusandae, dolores illo tempora sint iste eum hic, officia
+                        esse quasi quod?</p>
+                    <p class="f">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eveniet modi id nisi
+                        obcaecati vitae quis sapiente unde recusandae, dolores illo tempora sint iste eum hic, officia
+                        esse quasi quod?</p>
+                    <p class="g">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eveniet modi id nisi
+                        obcaecati vitae quis sapiente unde recusandae, dolores illo tempora sint iste eum hic, officia
+                        esse quasi quod?</p>
+                </li>
+                <li><strong>text-decoration-color</strong>
+                    <p class="h">Text-decoration-color</p>
+                    <p class="i">Text-decoration-color</p>
+                    <p class="j">Text-decoration-color</p>
+                </li>
+                <li><strong>text-decoration-thickness</strong>
+                    <p class="k">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eveniet modi id nisi
+                        obcaecati vitae quis sapiente unde recusandae, dolores illo tempora sint iste eum hic, officia
+                        esse quasi quod?</p>
+                </li>
+                <li><strong>text-decoration</strong>
+                    <p class="l">Text-decoration-shorthand property</p>
+                </li>
+            </ul>
+        </li>
+        <li> <strong>Removing the Default Underline from Links</strong>
+            <p> <a href="#">Removing underline from the links</a></p>
+        </li>
+        <li><strong> Text Transformation</strong>
+            <p>The text-transform property is used to specify uppercase and lowercase letters in a text.</p>
+            <ul>
+                <li class="uppercase">This text is transformed to uppercase. </li>
+                <li class="lowercase">This teXt is Transformed to lowErcase. </li>
+                <li class="capitalize"> This text is capitalize. </li>
+            </ul>
+        </li>
+        <li> <strong>Text Indentation</strong>
+            <p>The text-indent property is used to specify the indentation of the first line of a text:</p>
+            <p class="indent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, odit itaque! Maxime reiciendis nulla quam et amet minus soluta libero, voluptatibus possimus optio in illo eos porro aliquid tempora necessitatibus.</p>
+        </li>
+        <li> <strong>Letter Spacing</strong>
+            <p class="letter-spacing">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt eaque corporis magni ab consequatur! Possimus atque voluptas quaerat corrupti eos, nemo totam, qui esse accusantium nam nobis ipsum enim hic.</p>
+        </li>
+        <li> <strong> Word Spacing</strong>
+            <p class="word-spacing">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quia, earum velit ducimus, voluptas nulla labore eius, odio debitis corporis laboriosam ad veritatis quis suscipit quos non amet dolorem? Sapiente.</p>
+        </li>
     </ul>
 </body>
 
