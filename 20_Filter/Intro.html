@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            width: 20%;
+            margin: 20px;
+            box-shadow: 2px 5px 5px rgb(44, 44, 62);
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .blur {
+            filter: blur(2px);
+        }
+
+        .brightness:hover {
+            filter: brightness(80%);
+        }
+
+        .brightness {
+            filter: brightness(1);
+        }
+
+        .contrast {
+            filter: contrast(200%);
+        }
+
+        .drop-shadow {
+            filter: drop-shadow(16px 16px 20px blue);
+        }
+
+        .grayscale {
+            filter: grayscale(50%);
+        }
+
+        .hue-rotate {
+            filter: hue-rotate(90deg);
+        }
+
+        .invert {
+            filter: invert(75%);
+        }
+
+        .opacity {
+            filter: opacity(25%);
+        }
+
+        .saturate {
+            filter: saturate(30%);
+        }
+
+        .sepia {
+            filter: sepia(60%);
+        }
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS FILTER </h2>
+    <p>The filter property defines visual effects (like blur and saturation) to an element (often &lt;img&gt;).</p>
+
+    <ul>
+        <li> filter: blur(5px);</li>
+        <li> filter: brightness(0.4);</li>
+        <li> filter: contrast(200%);</li>
+        <li> filter: drop-shadow(16px 16px 20px blue);</li>
+        <li> filter: grayscale(50%);</li>
+        <li> filter: hue-rotate(90deg);</li>
+        <li> filter: invert(75%);</li>
+        <li> filter: opacity(25%);</li>
+        <li> filter: saturate(30%);</li>
+        <li> filter: sepia(60%);</li>
+    </ul>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img class="blur" src="filter.jpg" alt="">
+            </div>
+            <div class="col">
+                <img class="brightness" src="filter.jpg" alt="">
+            </div>
+            <div class="col">
+                <img class="contrast" src="filter.jpg" alt="">
+            </div>
+            <div class="col">
+                <img class="drop-shadow" src="filter.jpg" alt="">
+            </div>
+            <div class="col">
+                <img class="grayscale" src="filter.jpg" alt="">
+            </div>
+            <div class="col">
+                <img class="hue-rotate" src="filter.jpg" alt="">
+            </div>
+            <div class="col">
+                <img class="invert" src="filter.jpg" alt="">
+            </div>
+            <div class="col">
+                <img class="opacity" src="filter.jpg" alt="">
+            </div>
+            <div class="col">
+                <img class="saturate" src="filter.jpg" alt="">
+            </div>
+            <div class="col">
+                <img class="sepia" src="filter.jpg" alt="">
+            </div>
+        </div>
+    </div>
+        <p>Note: To check the brightness property please hover on 2nd image.</p>
+</body>
+
+</html>
