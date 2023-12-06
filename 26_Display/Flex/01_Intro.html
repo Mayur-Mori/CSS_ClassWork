@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid;
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+            min-height: 150px;
+            background-color: violet;
+        }
+
+        .reverse {
+            /* display: flex; */
+            flex-direction: row-reverse;
+        }
+
+        .container {
+            width: 1100px;
+            margin: 0 auto;
+            border: 1px solid;
+        }
+
+        .col1 {
+            display: flex;
+            flex-direction: column;
+            min-height: 200px;
+            background-color: violet;
+        }
+
+        .reverse1 {
+            flex-direction: column-reverse;
+        }
+
+        .col {
+            height: 50px;
+            background-color: rgba(128, 0, 92, 0.604);
+            color: white;
+
+        }
+
+        .col2 {
+            width: 25%;
+            height: 150px;
+        }
+
+        .flexwrap {
+            flex-wrap: wrap;
+        }
+
+        .flexwraprev {
+            flex-wrap: wrap-reverse;
+        }
+
+        .shorthand {
+            flex-flow: row-reverse wrap-reverse;
+        }
+
+        .order1 {
+            order: 1;
+        }
+
+        .justify-content-start {
+            justify-content: flex-start;
+        }
+
+        .justify-content-end {
+            justify-content: flex-end;
+        }
+
+        .justify-content-center {
+            justify-content: center;
+        }
+
+        .justify-content-space-between {
+            justify-content: space-between;
+        }
+
+        .justify-content-space-evenly {
+            justify-content: space-evenly;
+        }
+
+        .justify-content-space-around {
+            justify-content: space-around;
+        }
+        .start{
+            align-items: flex-start;
+        }
+        .end{
+            align-items:flex-end ;
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .grow{
+            flex-grow: 1;
+        }
+        .shrink{
+           flex-shrink: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Display</h1>
+    <p>The display CSS property sets whether an element is treated as a block or inline box and the layout used for its
+        children, such as flow layout, grid or flex.</p>
+    <h2>CSS Display Flex</h2>
+    <p>Flexbox is a one-dimensional layout method for arranging items in rows or columns.The display: flex property sets
+        your container to be a flexbox element. The flex-wrap property tells the container to wrap its child elements
+        onto the next line if there's not enough space for them on the first line</p>
+    <h3>Display flex</h3>
+    <div class="row">
+        <div class="box">Text</div>
+        <div class="box">Text</div>
+        <div class="box">Text</div>
+        <div class="box">Text</div>
+        <div class="box">Text</div>
+    </div>
+    <h3>Ordering & Orientation</h3>
+    <ul>
+        <li>flex-direction
+            <div class="container">
+                <h3>Flex-direction-row</h3>
+                <div class="row">
+                    <div class="col">text</div>
+                    <div class="col">text</div>
+                    <div class="col">text</div>
+                </div>
+                <h3>flex-direction-row-reverse</h3>
+                <div class="row reverse">
+                    <div class="col">text</div>
+                    <div class="col">text</div>
+                    <div class="col">text</div>
+                </div>
+                <h3>flex-direction-col</h3>
+                <div class="col1">
+                    <div class="col">text</div>
+                    <div class="col">text</div>
+                    <div class="col">text</div>
+                </div>
+                <h3>flex-direction-col-reverse</h3>
+                <div class="col1 reverse1">
+                    <div class="col">text</div>
+                    <div class="col">text</div>
+                    <div class="col">text</div>
+                </div>
+        </li>
+        <li>flex-wrap
+            </div>
+            <div class="container">
+                <h3>flex-no-wrap</h3>
+                <div class="row">
+                    <div class="col2">text</div>
+                    <div class="col2">text</div>
+                    <div class="col2">text</div>
+                </div>
+                <div class="row">
+                    <div class="col2">text</div>
+                    <div class="col2">text</div>
+                    <div class="col2">text</div>
+                    <div class="col2">text</div>
+                    <div class="col2">text</div>
+                    <div class="col2">text</div>
+                </div>
+                <h3>flex-wrap</h3>
+                <div class="row flexwrap">
+                    <div class="col2">text</div>
+                    <div class="col2">text</div>
+                    <div class="col2">text</div>
+                    <div class="col2">text</div>
+                    <div class="col2">text</div>
+                    <div class="col2">text</div>
+                </div>
+                <h3>flex-wrap-rev</h3>
+                <div class="row flexwraprev">
+                    <div class="col2">text1</div>
+                    <div class="col2">text2</div>
+                    <div class="col2">text3</div>
+                    <div class="col2">text4</div>
+                    <div class="col2">text5</div>
+                    <div class="col2">text6</div>
+                </div>
+            </div>
+        </li>
+        <li>flex-flow
+            <div class="container">
+                <h3>Shorthand property</h3>
+                <div class="row shorthand">
+                    <div class="col2">text1</div>
+                    <div class="col2">text2</div>
+                    <div class="col2">text3</div>
+                    <div class="col2">text4</div>
+                    <div class="col2">text5</div>
+                    <div class="col2">text6</div>
+                </div>
+            </div>
+        </li>
+        <li>order
+            <div class="container">
+                <div class="row order">
+                    <div class="order3">text1</div>
+                    <div class="order4">text2</div>
+                    <div class="order1">text3</div>
+                    <div class="order2">text4</div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <h3>Alignment</h3>
+    <ul>
+        <li>justify-content
+            <div class="container">
+                <h3>row justify-content-start</h3>
+                <div class="row justify-content-start">
+                    <div class="col">text1</div>
+                    <div class="col">text2</div>
+                    <div class="col">text3</div>
+                    <div class="col">text4</div>
+                    <div class="col">text5</div>
+                </div>
+                <h3>row justify-content-end</h3>
+                <div class="row justify-content-end">
+                    <div class="col">text1</div>
+                    <div class="col">text2</div>
+                    <div class="col">text3</div>
+                    <div class="col">text4</div>
+                    <div class="col">text5</div>
+                </div>
+                <h3>row justify-content-center</h3>
+                <div class="row justify-content-center">
+                    <div class="col">text1</div>
+                    <div class="col">text2</div>
+                    <div class="col">text3</div>
+                    <div class="col">text4</div>
+                    <div class="col">text5</div>
+                </div>
+                <h3>row justify-content-space-between</h3>
+                <div class="row justify-content-space-between">
+                    <div class="col">text1</div>
+                    <div class="col">text2</div>
+                    <div class="col">text3</div>
+                    <div class="col">text4</div>
+                    <div class="col">text5</div>
+                </div>
+                <h3>row justify-content-space-evenly</h3>
+                <div class="row justify-content-space-evenly">
+                    <div class="col">text1</div>
+                    <div class="col">text2</div>
+                    <div class="col">text3</div>
+                    <div class="col">text4</div>
+                    <div class="col">text5</div>
+                </div>
+                <h3>row justify-content-space-around</h3>
+                <div class="row justify-content-space-around">
+                    <div class="col">text1</div>
+                    <div class="col">text2</div>
+                    <div class="col">text3</div>
+                    <div class="col">text4</div>
+                    <div class="col">text5</div>
+                </div>
+            </div>
+        </li>
+        <li>align-items, align-self
+            <div class="container">
+                <h3>row align-items-stretch</h3>
+                <div class="row stretch">
+                    <div class="col">text1</div>
+                    <div class="col">text2</div>
+                    <div class="col">text3</div>
+                </div>
+                <h3>row align-items-start</h3>
+                <div class="row start">
+                    <div class="col">text1</div>
+                    <div class="col">text2</div>
+                    <div class="col">text3</div>
+                </div>
+                <h3>row align-items-end</h3>
+                <div class="row end">
+                    <div class="col">text1</div>
+                    <div class="col">text2</div>
+                    <div class="col">text3</div>
+                </div>
+                <h3>row align-items-center</h3>
+                <div class="row center">
+                    <div class="col">text1</div>
+                    <div class="col">text2</div>
+                    <div class="col">text3</div>
+                </div>
+                <h3>row align-items-baseline</h3>
+                <div class="row baseline">
+                    <div class="col">text1</div>
+                    <div class="col">text2</div>
+                    <div class="col">text3</div>
+                </div> 
+        </li>
+    </ul>
+    <h3>Flexibility</h3>
+    <ul>
+        <li>flex-grow
+            <div class="container">
+                <div class="row ">
+                    <div class="col">text1</div>
+                    <div class="col grow">text2</div>
+                    <div class="col">text3</div>
+                    <div class="col">text4</div>
+                </div>
+            </div>
+        </li>
+        <li>flex-shrink
+            <div class="container">
+                <div class="row ">
+                    <div class="col">text1</div>
+                    <div class="col">text2</div>
+                    <div class="col shrink">text3</div>
+                    <div class="col">text4</div>
+                </div>
+        </li>
+</body>
+
+</html>
