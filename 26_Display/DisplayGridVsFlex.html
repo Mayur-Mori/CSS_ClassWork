@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            border: 1px solid;
+            box-sizing: border-box;
+            width: 500px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .wrapper1 {
+            border: 1px solid;
+            box-sizing: border-box;
+            width: 500px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .wrapper>div {
+            border: 1px solid;
+            flex: 1 1 150px;
+            background-color: violet;
+        }
+        .wrapper1>div {
+            border: 1px solid;
+            flex: 1 1 150px;
+            background-color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Grid Vs Flex</h2>
+    <p>The basic difference between CSS grid layout and CSS flexbox layout is that flexbox was designed for layout in
+        one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at
+        the same time.</p>
+    <h2>One Vs Two Dimensions:</h2>
+    <ul>
+        <li>Grid is made for a two-dimensional layout while Flexbox is for one. This means Flexbox can work on either
+            row or columns at a time, but Grids can work on both.</li>
+        <li>Flexbox gives you more flexibility while working on either element (row or column). HTML markup and CSS will
+            be easy to manage in this type of scenario.</li>
+        <li>GRID gives you more flexibility to move around the blocks irrespective of your HTML markup.</li>
+    </ul>
+
+    <p>In this first example, I am using flexbox to lay out a set of boxes. I have five child items in my container, and
+        I have given the flex properties values so that they can grow and shrink from a flex-basis of 150 pixels.</p>
+    <div class="wrapper">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four</div>
+        <div>Five</div>
+    </div>
+    <p>In this next example, I create the same layout using Grid. This time we have three 1fr column tracks. We do not
+        need to set anything on the items themselves; they will lay themselves out one into each cell of the created
+        grid. As you can see they stay in a strict grid, lining up in rows and columns. With five items, we get a gap on
+        the end of row two.</p>
+    <div class="wrapper1">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four</div>
+        <div>Five</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span.A {
+            display: inline;
+            /* the default for span */
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blueviolet;
+            background-color: violet;
+        }
+
+        span.B {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blueviolet;
+            background-color:   violet;
+        }
+
+        span.C {
+            display: block;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blueviolet;
+            background-color:violet;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>The display: inline-block Value</h2>
+    <ul>
+        <li>Compared to display: inline, the major difference is that display: inline-block allows to set a width and
+            height on the element.</li>
+        <li>Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display:
+            inline they are not.</li>
+        <li>Compared to display: block, the major difference is that display: inline-block does not add a line-break
+            after the element, so the element can sit next to other elements.</li>
+    </ul>
+    <p>For Example:</p>
+    <h2>Display Inline</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim accusamus minus quod. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque alias inventore voluptates, id atque eveniet deleniti similique ex magnam quis cupiditate officia? Laborum autem nisi tenetur quisquam delectus ipsum dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, nam officiis optio, atque ullam labore magnam a dolor veniam esse est vitae minima maxime vel. Odio sed nihil veritatis quia. <span class="A">Mayur</span><span class="A">Mayur</span>
+        Tempora, animi corporis ipsum deleniti aut ut! Voluptatibus ipsam consequatur error expedita facilis odio qui
+        amet odit ut?</p>
+    <h2>Display Inline-Block</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim accusamus minus quod. <span class="B">Mayur</span><span class="B">Mayur</span>
+        Tempora, animi corporis ipsum deleniti aut ut! Voluptatibus ipsam consequatur error expedita facilis odio qui
+        amet odit ut?</p>
+    <h2>Display block</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim accusamus minus quod. <span class="C">Mayur</span><span class="C">Mayur</span>
+        Tempora, animi corporis ipsum deleniti aut ut! Voluptatibus ipsam consequatur error expedita facilis odio qui
+        amet odit ut?</p>
+</body>
+
+</html>
