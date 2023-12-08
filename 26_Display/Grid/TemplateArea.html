@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            border: 2px solid;
+            box-sizing: border-box;
+        }
+        #page {
+            display: grid;
+            width: 100%;
+            height: 250px; 
+            grid-template-rows: 50px 1fr 30px;
+            grid-template-columns: 250px 1fr 1fr;
+            grid-template-areas:
+                "head head head"
+                "nav  foot foot"
+                "nav  main main";
+           
+        }
+
+        #page>header {
+            border: 1px solid;
+            grid-area: head;
+            background-color: #8ca0ff;
+        }
+
+        #page>nav {
+            border: 1px solid;
+            grid-area: nav;
+            background-color: #ffa08c;
+        }
+
+        #page>main {
+            border: 1px solid;
+            grid-area: main;
+            background-color: #ffff64;
+        }
+
+        #page>footer {
+            border: 1px solid;
+            grid-area: foot;
+            background-color: #8cffa0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS grid-template-areas</h2>
+    <p>The grid-template-areas CSS property specifies named grid areas, establishing the cells in the grid and assigning
+        them names.</p>
+
+    <section id="page">
+        <header>Header</header>
+        <nav>Navigation</nav>
+        <main>Main area</main>
+        <footer>Footer</footer>
+    </section>
+
+</body>
+
+</html>
